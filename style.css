@@ -1,0 +1,174 @@
+body{
+	background-image: url(images/background.jpg);
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+	background-size: cover;
+	font-family: 'Ranga', cursive;
+	font-size: 18px;
+	}
+
+.container{
+	width: 95%;
+}
+
+
+.logo{
+	margin-top: 30px;
+}
+
+
+h1{
+	color: white;
+	text-align: center;
+	margin-top: 60px;
+	margin-bottom: 70px;
+	border-radius: 10px;
+	font-size: 72px;
+	font-weight: bold;
+}
+
+h2{
+	font-size: 38px;
+	margin-bottom: 25px;
+	font-weight: bold;
+}
+
+h3{
+	font-size: 28px;
+	font-weight: bold;
+}
+
+footer{
+	background-color: White;
+	text-align: center;
+	margin-top: 40px;
+	border-top: 2px solid black;
+}
+
+p{
+	text-align: center;
+}
+
+.block{
+	background-color: rgba(230, 230, 255, 0.5);
+	border-radius: 10px 10px 10px 10px;
+	text-align: center;
+	font-size: 24px;
+	border: 1px solid white;
+	margin-top: -15%;	
+}
+
+@media screen and (max-width: 1199px){
+	.block{
+	margin-top: 0px;
+	margin-bottom: 10px;	
+	}
+}
+
+
+.image{
+	max-width: 70%;
+	height: auto;
+	border-radius: 10px 10px 10px 10px;
+	border: 1px solid white;
+}
+
+
+.textCentral{
+	margin-top: 10%;
+	padding: 20px 20px 20px 20px;
+}
+
+@media screen and (max-width: 1199px){
+	.textCentral{
+	margin-top: 0px;
+	width: 50%;
+	margin-left: 25%;
+	}
+}
+
+
+select{
+	margin-bottom: 20px;
+}
+
+label{
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+
+/*css tableau*/
+table{
+
+}
+td, th{
+width: 30%;
+text-align: center;
+}
+
+td {
+	padding-bottom: 30px;
+}
+
+table, td, th{
+	text-align: center;
+}
+
+table{
+	width: 100%;
+}
+
+th{
+	font-size: 30px;
+	padding-bottom: 10px;
+}
+
+
+
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+
+#myCarousel{
+	margin-bottom: 50px; 
+	border: 1px solid white;
+	border-radius: 10px 10px 10px 10px;
+	margin-left: 26%;
+	width: 48%
+}
+
+@media screen and (max-width: 1199px){
+	#myCarousel{
+	width: 100%;
+	margin-left: 0px;
+	}
+}
+
+
+.shutter{
+padding-bottom: 300px;
+}
+
+.slumdog{
+	padding-bottom:200px;
+	padding-right: 300px;
+}
+
+figcaption {
+opacity:0;
+color: white;
+text-align: center;
+font-size: 45px;
+position:absolute;
+bottom:0;
+  left:0;
+right:0;
+top: 65px;
+text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
+}
+
+figure:hover figcaption {
+ opacity:1;
+}

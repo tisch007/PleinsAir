@@ -1,0 +1,235 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+  <title>Les Films de Plein Air</title> 
+  <meta charset="utf-8">
+  <link href="assets/css/bootstrap.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
+  <style>@import url('https://fonts.googleapis.com/css?family=Ranga');</style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header class="row">
+      <div class="col-lg-3 logo">   
+        <a href=index.html><img src="images/logo.png" alt="logo du site Les Films de Plein Air"></a>
+      </div>
+      <div class="col-lg-6"> 
+        <h1> Le cinéma d'auteur grandeur nature</h1>
+      </div>
+    </header>
+
+<section class="row">
+<div id="myCarousel" class="carousel slide col-lg-12" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="images/gladiator2.jpg" alt="gladiator">
+          <div class="carousel-caption">
+            <h3> 8 Août 2016 à 21h !</h3>
+            <p>"Aujourd'hui, j'ai vu un esclave devenir plus puissant que l'empereur de Rome."</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/slumdog2.jpg" alt="Chania">
+          <div class="carousel-caption slumdog">
+            <h3>5 Août 2016 à 21h !</h3>
+            <p>Oscar du meilleur film 2009</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/requiem2.jpg" alt="Flower">
+          <div class="carousel-caption">
+            <h3> 6 Août 2016 à 18h !</h3>
+            <p>Un film de Darren Aronofsky</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/shutter2.jpg" alt="Flower">
+          <div class="carousel-caption shutter">
+            <h3>7 Août 2016 à 18h !</h3>
+            <p>"Il vaut mieux mourir en homme de bien que de vivre en homme de mal."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</section>
+
+
+
+
+
+
+
+    <section class="row">
+      <div class="col-lg-3 block"> <!-- liste des films projetté -->
+        <h2> Dates et horaires des projections</h2>
+        <table>
+          <tr>
+           <th>Dates</th>
+           <th>18H</th>
+           <th>21H</th>
+         </tr>
+         <tr>
+           <td>05 Août 2016</td>
+           <td>Million Dollar Baby</td>
+           <td>Slumdog Millionaire</td>
+         </tr>
+         <tr>
+           <td>06 Août 2016</td>
+           <td>Requiem for a Dream</td>
+           <td>Les Parrains</td>
+         </tr>
+         <tr>
+           <td>07 Août 2016</td>
+           <td>Shutter Island</td>
+           <td>Gran Torino</td>
+         </tr>
+         <tr>
+           <td>08 Août 2016</td>
+           <td>Into the Wild</td>
+           <td>Gladiator</td>
+         </tr>
+       </table>         
+       <h2>Je réserve ma place !</h2>
+       <form method="post" action="traitement.php">
+         <p>
+          <label>Votre nom</label> : <input type="text" name="pseudo" />
+        </br>
+        <label>Nombre de personnes</label> : <input type="number" min="1" max="10"/>
+      </br>
+      <label for="film">Quelles films voulez-vous voir?</label><br />
+      <select name="film" id="film">
+       <optgroup label="05 Aôut 2016">
+         <option value="million">18H - Million Dollar Baby</option>
+         <option value="slumdog">21H - Slumdog Millionaire</option>
+       </optgroup>
+       <optgroup label="08 Aôut 2016">
+         <option value="requiem">18H - Requiem for a Dream</option>
+         <option value="parrains">21H - Les Parrains</option>
+       </optgroup>
+       <optgroup label="07 Aôut 2016">
+         <option value="Shutter">18H - Shutter Island</option>
+         <option value="Gran">21H - Gran Torino</option>
+       </optgroup>
+       <optgroup label="08 Aôut 2016">
+         <option value="Into">18H - Into the Wild</option>
+         <option value="Gladiator">21H - Gladiator</option>
+       </optgroup>
+     </select>
+   </br>
+   <input type="submit" value="Envoyer" class="envoyer" />
+ </p>
+</form>
+</div>
+<div class="col-lg-6">
+  
+  <div class="row"> 
+    <div class="col-lg-4">
+      <figure class="img">
+        <p><a href="images/million.jpg"><img src="images/million.jpg" alt="Million Dollar Baby" class="image"></a></p>
+        <figcaption>Le 5 Août </br> 18H</figcaption>
+      </figure>
+    </div>
+    <div class="col-lg-4">
+      <figure class="img">
+        <p><a href="images/slumdog.jpg"><img src="images/slumdog.jpg" alt="Slumdog Millionaire" class="image"></a></p>
+        <figcaption>Le 5 Août </br> 21H</figcaption>
+      </figure>
+    </div>
+    <div class="col-lg-4">
+      <figure class="img">
+       <p><a href="images/requiem.jpg"><img src="images/requiem.jpg" alt="Requiem for a Dream" class="image"></a></p>
+       <figcaption>Le 6 Août </br> 18H</figcaption>
+     </figure>
+   </div>
+ </div>
+ <div class="row"> 
+  <div class="col-lg-4">
+    <figure class="img">
+      <p><a href="images/parrains.jpg"><img src="images/parrains.jpg" alt="Les Parrains" class="image"></a></p>
+      <figcaption>Le 6 Août </br> 21H</figcaption>
+    </figure>
+  </div>
+  <div class="col-lg-4">
+    <p class="textCentral block"><strong>Le parc Monceau à Paris</strong> </br> Accès aux films gratuits pour tous !</br>Penser à vous inscire ! </p>
+  </div>
+  <div class="col-lg-4">
+    <figure class="img">
+      <p><a href="images/shutter.jpg"><img src="images/shutter.jpg" alt="Shutter Island" class="image"></a></p>
+      <figcaption>Le 7 Août </br> 18H</figcaption>
+    </figure>
+  </div>
+</div>
+<div class="row"> 
+  <div class="col-lg-4">
+    <figure class="img">
+     <p><a href="images/gran.jpg"><img src="images/gran.jpg" alt="Gran Torino" class="image"></a></p>
+     <figcaption>Le 7 Août </br> 21H</figcaption>
+   </figure>
+ </div>
+ <div class="col-lg-4">
+   <figure class="img">
+    <p><a href="images/into.jpg"><img src="images/into.jpg" alt="into the wild" class="image"></a></p>
+    <figcaption>Le 8 Août </br> 18H</figcaption>
+  </figure>
+</div>
+<div class="col-lg-4">
+  <figure class="img">
+    <p><a href="images/Gladiator.jpg"><img src="images/Gladiator.jpg" alt="Gladiator" class="image"></a></p>
+    <figcaption>Le 8 Août </br> 21H</figcaption>
+  </figure>
+</div>
+</div>
+</div>
+<div class="col-lg-3 block">
+  <h2>Actualités</h2>
+  <h3>Reportage France 3</h3>
+  <p>France 3 fait un reportage sur l'événement pendant la projection de Shutter Island. Certain d'entre vous seront interwiver.</p></br>
+  <h3>Présence excéptionnel de Frédéric Forestier</h3>
+  <p>Le réalisateur du film Les Parrains, Frédéric Forestier sera présent pour la projection de son film le 6 août 2016 à 21h. Il répondra à quelques questions après le film.</p></br>
+  <h3>Le groupe Phoenix  se produira entre les films</h3>
+  <p>Le groupe de rock Phoenix joura pendant la durée de l'événement entre la fin du film de 18h et le début du film de 21h. Retrouverz les sur facebook : <a href="https://www.facebook.com/wearephoenix/"> wearephoenix</a></p>
+</div>
+</section>
+</div>
+<footer class="row">
+  <div class="col-lg-6">
+    <h3>Contact : </h3>
+    <p>
+      <address>Films De Plein Air
+        Adresse : 24 rue Victor Hugo, 75236 Paris</br>
+        Courriel : <a href="mailto:filmsdepleinair@yahoo.com">filmsdepleinair@yahoo.com</a></br>
+        Tel : +33 1 23 75 26 98</address>
+      </p>
+    </div>
+    <div class="col-lg-6">
+      <h3>Adresse des projections :</h3>
+      <address>Le parc Monceau à Paris</br>
+        Adresse : 35 Boulevard de Courcelles, 75008 Paris
+      </address>
+    </p>
+  </div>
+</footer>
+</body>
+</html>
